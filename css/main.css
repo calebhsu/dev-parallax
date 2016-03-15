@@ -1,0 +1,92 @@
+/* line 1, ../scss/_base.scss */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, ../scss/_base.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Parallax Stuff */
+/* line 15, ../scss/_base.scss */
+.home {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+/* line 23, ../scss/_base.scss */
+.slide:before {
+  background: 50% 50% / cover;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 33, ../scss/_base.scss */
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+}
+
+/* line 42, ../scss/_base.scss */
+.slide p,
+.slide figure {
+  position: relative;
+  z-index: -1;
+}
+
+/* line 48, ../scss/_base.scss */
+.slide p {
+  transform: translateZ(0.2px) scale(0.8);
+  width: 25%;
+  float: left;
+}
+
+/* line 54, ../scss/_base.scss */
+.slide figure {
+  transform: translateZ(-0.4px) scale(1.4);
+  width: 25%;
+  float: left;
+}
+
+/* line 60, ../scss/_base.scss */
+#title {
+  background-image: url("http://placehold.it/1024x768/ffff00");
+  background-attachment: fixed;
+}
+
+/* line 65, ../scss/_base.scss */
+#slide1:before {
+  background-image: url("http://placehold.it/1024x768/00ff00");
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+/* line 71, ../scss/_base.scss */
+#slide2 {
+  background-image: url("http://placehold.it/1024x768/0000ff");
+  background-attachment: fixed;
+}
+
+/* line 76, ../scss/_base.scss */
+#slide3:before {
+  background-image: url("http://placehold.it/1024x768/aa00bb");
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
