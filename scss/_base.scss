@@ -112,24 +112,32 @@ html {
 }
 
 #slide3 {
-  background-color: black;
-  @include skyImage('../img/sky.jpg');
-  h2 {
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(42, 62, 98, 1);
-    color: $color-dark;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3em;
+  @include gradBlack('../img/sky-sea-earth.jpg');
+  header {
     margin: 0 auto;
+
+  }
+  h2 {
+    border: 0.2em double $color-light;
+    border-radius: 50%;
+    color: $color-light;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1.5em;
+    height: 4.5em;
+    line-height: 1.5em;
+    margin: 1em auto;
     padding: 1em 0;
+    // transform: translateZ(0.2px) scale(0.8);
     text-align: center;
-    text-transform: uppercase;
-    width: 40%;
+    width: 4.5em;
   }
   #dome {
     transform: translateZ(-0.1px) scale(1.5);
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
 }
-  
+
+#slide4:before {
+  transform: translateZ(0.2px) scale(0.8);
+}

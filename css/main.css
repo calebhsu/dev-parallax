@@ -194,29 +194,38 @@ html {
 
 /* line 114, ../scss/_base.scss */
 #slide3 {
-  background-color: black;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/sky.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/sky-sea-earth.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 117, ../scss/_base.scss */
-#slide3 h2 {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid #2a3e62;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
+/* line 116, ../scss/_base.scss */
+#slide3 header {
   margin: 0 auto;
+}
+/* line 120, ../scss/_base.scss */
+#slide3 h2 {
+  border: 0.2em double white;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 1.5em;
+  height: 4.5em;
+  line-height: 1.5em;
+  margin: 1em auto;
   padding: 1em 0;
   text-align: center;
-  text-transform: uppercase;
-  width: 40%;
+  width: 4.5em;
 }
-/* line 129, ../scss/_base.scss */
+/* line 134, ../scss/_base.scss */
 #slide3 #dome {
   transform: translateZ(-0.1px) scale(1.5);
   width: 100%;
-  z-index: -1;
+  z-index: 0;
+}
+
+/* line 141, ../scss/_base.scss */
+#slide4:before {
+  transform: translateZ(0.2px) scale(0.8);
 }
