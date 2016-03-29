@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif|Poiret+One|Special+Elite|Corbel|La+Belle+Aurore);
 /* line 5, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -125,33 +126,75 @@ html {
 
 /* line 54, ../scss/_base.scss */
 .slide figure {
-  transform: translateZ(-0.4px) scale(1.4);
-  width: 25%;
   float: left;
+  transform: translateZ(-0.2px) scale(1.5);
+  width: 50%;
+  z-index: -1;
 }
 
-/* line 60, ../scss/_base.scss */
+/* line 61, ../scss/_base.scss */
 #title {
-  background-image: url("http://placehold.it/1024x768/ffff00");
-  background-attachment: fixed;
+  background-color: black;
+}
+/* line 63, ../scss/_base.scss */
+#title h1 {
+  color: white;
+  font-family: "La Belle Aurore", "Poiret One", sans-serif;
+  font-size: 7em;
+  margin: 0 auto;
+  padding: 0 0 5em;
+  text-align: center;
+  width: 80%;
 }
 
-/* line 65, ../scss/_base.scss */
+/* line 74, ../scss/_base.scss */
 #slide1:before {
-  background-image: url("http://placehold.it/1024x768/00ff00");
+  background-color: black;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
-/* line 71, ../scss/_base.scss */
-#slide2 {
-  background-image: url("http://placehold.it/1024x768/0000ff");
-  background-attachment: fixed;
+/* line 80, ../scss/_base.scss */
+#slide1 h2 {
+  color: white;
+  font-family: "La Belle Aurore", "Poiret One", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  transform: translateZ(-1px) scale(1.5);
 }
 
-/* line 76, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
+#slide2 {
+  background-color: black;
+  background-image: url("../img/glow.png");
+  background-attachment: fixed;
+}
+/* line 93, ../scss/_base.scss */
+#slide2 #day, #slide2 #night {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateZ(-0.3px) scale(1.2);
+  width: 40%;
+}
+/* line 103, ../scss/_base.scss */
+#slide2 #day {
+  background-color: white;
+  color: black;
+}
+/* line 107, ../scss/_base.scss */
+#slide2 #night {
+  background-color: black;
+  border-top: 0.2em double white;
+  color: white;
+}
+
+/* line 114, ../scss/_base.scss */
 #slide3:before {
-  background-image: url("http://placehold.it/1024x768/aa00bb");
+  background-color: white;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
