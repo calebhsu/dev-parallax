@@ -194,7 +194,7 @@ html {
 
 /* line 114, ../scss/_base.scss */
 #slide3 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/sky-sea-earth.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../img/sky-sea-earth.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ html {
 #slide3 header {
   margin: 0 auto;
 }
-/* line 120, ../scss/_base.scss */
+/* line 119, ../scss/_base.scss */
 #slide3 h2 {
   border: 0.2em double white;
   border-radius: 50%;
@@ -220,11 +220,12 @@ html {
   text-align: center;
   width: 4.5em;
 }
-/* line 135, ../scss/_base.scss */
+/* line 134, ../scss/_base.scss */
 #slide3 #earth {
   bottom: -20em;
   position: absolute;
   transform: translateZ(-2.8px) scale(4);
+  z-index: 0;
 }
 /* line 140, ../scss/_base.scss */
 #slide3 #sea {
@@ -245,6 +246,26 @@ html {
 }
 
 /* line 156, ../scss/_base.scss */
-#slide4:before {
-  transform: translateZ(0.2px) scale(0.8);
+#slide4 {
+  background-color: white;
+}
+
+/* line 159, ../scss/_base.scss */
+#slide4 h2 {
+  color: black;
+  font-family: "La Belle Aurore", "Poiret One", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  transform: translateZ(-0.5px) scale(1.3);
+}
+
+/* line 167, ../scss/_base.scss */
+#slide5:before {
+  background-color: white;
+}
+
+/* line 171, ../scss/_base.scss */
+#flower {
+  opacity: 0.6;
+  transform: translateZ(0.2px) scale(1.5);
 }
