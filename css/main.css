@@ -264,8 +264,8 @@ html {
   background-color: white;
 }
 
-/* line 171, ../scss/_base.scss */
+/* line 170, ../scss/_base.scss */
 #flower {
   opacity: 0.6;
-  transform: translateZ(0.2px) scale(1.5);
+  transform: translateZ(0.2px) scale(2);
 }
