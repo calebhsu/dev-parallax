@@ -11,6 +11,12 @@ html {
   overflow: hidden;
 }
 
+h3 {
+  font-family: $font-title;
+  font-size: 2em;
+  text-align: center;
+}
+
 /* Parallax Stuff */
 .home {
   perspective: 1px;
@@ -79,9 +85,6 @@ html {
 
 #slide1 h2 {
   color: $color-light;
-  font-family: $font-title;
-  font-size: 2em;
-  text-align: center;
   transform: translateZ(-1px) scale(1.8);
 }
 
@@ -116,7 +119,7 @@ html {
   header {
     margin: 0 auto;
   }
-  h2 {
+  h4 {
     border: 0.2em double $color-light;
     border-radius: 50%;
     color: $color-light;
@@ -126,7 +129,7 @@ html {
     left: 0;
     line-height: 1.5em;
     margin: 1em auto;
-    padding: 1em 0;
+    padding: 1.2em 0;
     right: 0;
     text-align: center;
     width: 4.5em;
@@ -157,7 +160,7 @@ html {
     float: right;
   }
 }
-#slide4 h2 {
+#slide4 h3 {
   color: $color-dark;
   font-family: $font-title;
   font-size: 2em;
@@ -173,19 +176,37 @@ html {
   background-image: url('../img/full-background.png');
   background-attachment: fixed;
 
+  h3 {
+    bottom: 40em;
+    color: $color-light;
+    position: absolute;
+    transform: translateZ(-0.8px) scale(1.5);
+  }
+
   .fg {
     left: -17em;
     margin: 0 auto;
     position: relative;
     transform: translateZ(-1px) scale(1.6);
+    z-index: 10;
   }
 
   #moon {
-    bottom: 8em;
+    bottom: 40em;
     opacity: 0.9;
     position: absolute;
-    right: 2em;
-    transform: translateZ(-1px) scale(1);
+    right: 8em;
+    transform: translateZ(0.1px) scale(0.6);
+    z-index: 5;
+  }
+
+  #sun {
+    bottom: 10em;
+    left: -20em;
+    opacity: 0.9;
+    position: absolute;
+    transform: translateZ(-0.9px) scale(1.1);
+    z-index: 5;
   }
 }
 
@@ -193,9 +214,3 @@ html {
   background-color: black;
 }
 
-#sun {
-  bottom: 20em;
-  position: absolute;
-  right: 2em;
-  transform: translateZ(1px) scale(0.3);
-}
