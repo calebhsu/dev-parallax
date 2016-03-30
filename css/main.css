@@ -83,11 +83,10 @@ html {
 h3 {
   font-family: "La Belle Aurore", "Poiret One", sans-serif;
   font-size: 2em;
-  text-align: center;
 }
 
 /* Parallax Stuff */
-/* line 21, ../scss/_base.scss */
+/* line 20, ../scss/_base.scss */
 .home {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -96,7 +95,7 @@ h3 {
   overflow-x: hidden;
 }
 
-/* line 29, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 .slide:before {
   background: 50% 50% / cover;
   bottom: 0;
@@ -107,7 +106,7 @@ h3 {
   top: 0;
 }
 
-/* line 39, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 .slide {
   position: relative;
   padding: 25vh 10%;
@@ -117,21 +116,21 @@ h3 {
   background: 50% 50% / cover;
 }
 
-/* line 48, ../scss/_base.scss */
+/* line 47, ../scss/_base.scss */
 .slide p,
 .slide figure {
   position: relative;
   z-index: -1;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .slide p {
   transform: translateZ(0.2px) scale(0.8);
   width: 25%;
   float: left;
 }
 
-/* line 60, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 .slide figure {
   float: left;
   transform: translateZ(-0.2px) scale(1.5);
@@ -139,11 +138,11 @@ h3 {
   z-index: -1;
 }
 
-/* line 67, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 #title {
   background-color: black;
 }
-/* line 69, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 #title h1 {
   color: white;
   font-family: "La Belle Aurore", "Poiret One", sans-serif;
@@ -154,17 +153,18 @@ h3 {
   width: 90%;
 }
 
-/* line 80, ../scss/_base.scss */
+/* line 79, ../scss/_base.scss */
 #slide1:before {
   background-color: black;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
 
-/* line 86, ../scss/_base.scss */
-#slide1 h2 {
+/* line 85, ../scss/_base.scss */
+#slide1 h3 {
   color: white;
   transform: translateZ(-1px) scale(1.8);
+  text-align: center;
 }
 
 /* line 91, ../scss/_base.scss */
@@ -214,10 +214,10 @@ h3 {
   border-radius: 50%;
   color: white;
   font-family: 'Poiret One', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   height: 4.5em;
   left: 0;
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin: 1em auto;
   padding: 1.2em 0;
   right: 0;
@@ -226,9 +226,9 @@ h3 {
 }
 /* line 137, ../scss/_base.scss */
 #slide3 #earth {
-  bottom: -20em;
+  bottom: -5em;
   position: absolute;
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-1.6px) scale(2.3);
 }
 /* line 142, ../scss/_base.scss */
 #slide3 #sea {
@@ -258,28 +258,24 @@ h3 {
   color: black;
   font-family: "La Belle Aurore", "Poiret One", sans-serif;
   font-size: 2em;
-  text-align: center;
   transform: translateZ(-0.5px) scale(1.3);
 }
 
-/* line 171, ../scss/_base.scss */
-#flower {
-  transform: translateZ(0px) scaleX(2) scaleY(2.4);
-}
-
-/* line 175, ../scss/_base.scss */
+/* line 170, ../scss/_base.scss */
 #slide5 {
+  background-color: black;
   background-image: url("../img/full-background.png");
   background-attachment: fixed;
 }
-/* line 179, ../scss/_base.scss */
+/* line 175, ../scss/_base.scss */
 #slide5 h3 {
   bottom: 40em;
   color: white;
   position: absolute;
   transform: translateZ(-0.8px) scale(1.5);
+  text-align: center;
 }
-/* line 186, ../scss/_base.scss */
+/* line 183, ../scss/_base.scss */
 #slide5 .fg {
   left: -17em;
   margin: 0 auto;
@@ -287,7 +283,7 @@ h3 {
   transform: translateZ(-1px) scale(1.6);
   z-index: 10;
 }
-/* line 194, ../scss/_base.scss */
+/* line 191, ../scss/_base.scss */
 #slide5 #moon {
   bottom: 40em;
   opacity: 0.9;
@@ -296,7 +292,7 @@ h3 {
   transform: translateZ(0.1px) scale(0.6);
   z-index: 5;
 }
-/* line 203, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 #slide5 #sun {
   bottom: 10em;
   left: -20em;
@@ -306,7 +302,18 @@ h3 {
   z-index: 5;
 }
 
-/* line 213, ../scss/_base.scss */
-#slide7:before {
+/* line 210, ../scss/_base.scss */
+#slide6:before {
   background-color: black;
+  transform: translateZ(0.1px) scaleY(1.15);
+}
+
+/* line 215, ../scss/_base.scss */
+#slide6 h3 {
+  bottom: 3em;
+  color: white;
+  position: absolute;
+  transform: translateZ(-0.2px) scale(1.2);
+  text-align: center;
+  z-index: 20;
 }

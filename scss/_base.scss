@@ -14,7 +14,6 @@ html {
 h3 {
   font-family: $font-title;
   font-size: 2em;
-  text-align: center;
 }
 
 /* Parallax Stuff */
@@ -83,9 +82,10 @@ h3 {
   z-index: -1;
 }
 
-#slide1 h2 {
+#slide1 h3 {
   color: $color-light;
   transform: translateZ(-1px) scale(1.8);
+  text-align: center;
 }
 
 #slide2 {
@@ -124,10 +124,10 @@ h3 {
     border-radius: 50%;
     color: $color-light;
     font-family: 'Poiret One', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
     height: 4.5em;
     left: 0;
-    line-height: 1.5em;
+    line-height: 1.2em;
     margin: 1em auto;
     padding: 1.2em 0;
     right: 0;
@@ -135,9 +135,9 @@ h3 {
     width: 4.5em;
   }
   #earth {
-    bottom: -20em;
+    bottom: -5em;
     position: absolute;
-    transform: translateZ(-2px) scale(3);
+    transform: translateZ(-1.6px) scale(2.3);
   }
   #sea {
     bottom: 1.5em;
@@ -164,15 +164,11 @@ h3 {
   color: $color-dark;
   font-family: $font-title;
   font-size: 2em;
-  text-align: center;
   transform: translateZ(-0.5px) scale(1.3);
 }
 
-#flower {
-  transform: translateZ(0px) scaleX(2) scaleY(2.4);
-}
-
 #slide5 {
+  background-color: black;
   background-image: url('../img/full-background.png');
   background-attachment: fixed;
 
@@ -181,6 +177,7 @@ h3 {
     color: $color-light;
     position: absolute;
     transform: translateZ(-0.8px) scale(1.5);
+    text-align: center;
   }
 
   .fg {
@@ -210,7 +207,17 @@ h3 {
   }
 }
 
-#slide7:before {
-  background-color: black;
+#slide6:before {
+  background-color: $color-dark;
+  transform: translateZ(0.1px) scaleY(1.15);
+}
+
+#slide6 h3 {
+  bottom: 3em;
+  color: $color-light;
+  position: absolute;
+  transform: translateZ(-0.2px) scale(1.2);
+  text-align: center;
+  z-index: 20;
 }
 
