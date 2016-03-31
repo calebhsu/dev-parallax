@@ -135,18 +135,18 @@ h3 {
     width: 4.5em;
   }
   #earth {
-    bottom: -5em;
+    bottom: -1em;
     position: absolute;
-    transform: translateZ(-1.6px) scale(2.3);
+    transform: translateZ(-1.4px) scale(2.2);
   }
   #sea {
     bottom: 1.5em;
     position: absolute;
-    transform: translateZ(-1px) scale(1.8);    
+    transform: translateZ(-0.4px) scale(1.4);    
   }
   #sky {
-    bottom: 3em;
-    transform: translateZ(-0.4px) scale(1.3);   
+    bottom: 2em;
+    transform: translateZ(-0.2px) scale(1.2);   
   }
   #dome {
     transform: translateZ(-0.1px) scale(1.5);
